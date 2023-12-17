@@ -6,7 +6,7 @@ const Product = () => {
 
     let { state } = useLocation();
 
-    const { name, price, description } = state;
+    const { name, price, description, image, rating } = state;
 
     const handleInputChange = (event) => {
 
@@ -20,9 +20,9 @@ const Product = () => {
                 <div className="container">
                     <div className="columns">
                         <div className="column is-half">
-                            <img src="https://m.media-amazon.com/images/I/613uANLiukL.__AC_SX300_SY300_QL70_FMwebp_.jpg" alt="Product 1" />
+                            <img src={image} alt="Product 1" width="384px" height="384px" />
                         </div>
-                        <div className="column is-half">
+                        <div className="column is-half is-flex is-flex-direction-column is-justify-content-space-around">
                             <h1 className="title">{name}</h1>
                             <p className="subtitle">${price}</p>
                             <p>Description {description}</p>

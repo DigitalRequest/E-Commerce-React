@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <h1 className="title">My Routes</h1>
+      
     </>
   )
 }
